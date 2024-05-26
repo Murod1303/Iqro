@@ -64,4 +64,5 @@ export const DashboarWrapper = styled.div`
   padding: 44px 0;
   gap: 20px;
   background-color: #fff;
+  box-shadow: 20px 0px 20px rgba(240, 237, 246, 0.5);
 `;

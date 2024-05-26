@@ -67,3 +67,19 @@ export const BtnMenu = {
   id: 12,
   path: "/",
 };
+
+export const SearchIcon = {
+  name: "searchIcon",
+  img: "./search.svg",
+  id: 13,
+};
+export const SMSHeadrIcon = {
+  name: "smsHeaderIcon",
+  img: "./smsheader.svg",
+  id: 14,
+};
+export const notificationIcon = {
+  name: "notificationIcon",
+  img: "./notefication.svg",
+  id: 15,
+};
