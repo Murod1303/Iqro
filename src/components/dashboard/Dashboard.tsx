@@ -1,5 +1,6 @@
-import { Images } from "../../../public/Images";
+import { BtnMenu, Images } from "../../../public/Images";
 import {
+  AiFillHomeEl,
   BorderSpan,
   DashboarWrapper,
   ImgEl,
@@ -13,15 +14,28 @@ import {
 const Dashboard = () => {
   return (
     <DashboarWrapper>
-      <MenuBtn></MenuBtn>
+      <MenuBtn>
+        <ImgEl src={BtnMenu.img} alt={BtnMenu.name} />
+      </MenuBtn>
       <NavBar>
         <ListUl>
+          <ItemLi>
+            <PathTo to="/">
+              <AiFillHomeEl width={16} height={16} fill="#C7C7D2" />
+            </PathTo>
+            <BorderSpan></BorderSpan>
+          </ItemLi>
           {Images &&
             Images.map((item) => {
               return (
                 <ItemLi key={item.id}>
                   <PathTo to={item?.path}>
-                    <ImgEl src={item.img} alt={item.name} />
+                    <ImgEl
+                      width={16}
+                      height={16}
+                      src={item.img}
+                      alt={item.name}
+                    />
                   </PathTo>
                   <BorderSpan></BorderSpan>
                 </ItemLi>
