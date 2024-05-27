@@ -13,3 +13,8 @@ export const HomeWrapper = styled.div`
   width: calc(100% - 102px);
   padding: 26px 30px 30px 30px;
 `;
+
+export const HomeInner = styled.div`
+  display: flex;
+  gap: 30px;
+`;
