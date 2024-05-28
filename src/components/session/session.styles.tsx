@@ -4,9 +4,8 @@ import { ChartIcon } from "../../../public/Images";
 export const SessionBody = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 100px;
-  max-width: 514px;
+  width: 514px;
   width: 100%;
   height: 294px;
   padding: 55px 82px;
@@ -30,6 +29,12 @@ export const SeesionSubTitle = styled.span`
   font-size: 14px;
   font-weight: 700;
 `;
+export const SessionYearText = styled.span`
+  color: #5a5881;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+`;
 export const SessionStrong = styled.strong`
   color: #15134b;
   font-size: 18px;
@@ -39,5 +44,9 @@ export const SessionSpan = styled.span`
   color: #5a5881;
   font-size: 13px;
   font-weight: 500;
+`;
+export const SessionTitleWrapper = styled(SessionContent)`
+  flex-direction: row;
+  justify-content: space-between;
 `;
 export const SessionWrapper = styled.div``;

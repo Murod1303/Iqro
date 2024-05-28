@@ -7,7 +7,9 @@ import {
   SessionContentWrapper,
   SessionSpan,
   SessionStrong,
+  SessionTitleWrapper,
   SessionWrapper,
+  SessionYearText,
 } from "./session.styles";
 
 const MockData: {
@@ -38,7 +40,10 @@ const MockData: {
 const Session = () => {
   return (
     <SessionWrapper>
-      <LineTitle>Sessions By Device</LineTitle>
+      <SessionTitleWrapper>
+        <LineTitle>Sessions By Device</LineTitle>
+        <SessionYearText>Year</SessionYearText>
+      </SessionTitleWrapper>
       <SessionBody>
         <ChartIconStyle />
         <SessionContentWrapper>

@@ -15,9 +15,9 @@ body,
 body {
   background: linear-gradient(180deg, #a93bff 0%, #8834ff 100%);
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
-.activeLink {
-  background: linear-gradient(180deg, #a93bff 0%, #8834ff 100%);
-  box-shadow: 0px 15px 35px 0px rgba(86, 59, 255, 0.26);
+::-webkit-scrollbar {
+  display: none;
 }
